@@ -8,6 +8,7 @@ export default function Read() {
 
   const sendRead = () => {
     Axios.get("https://subitt-application-clientdemo.onrender.com/client/").then((response) => {
+      console.log(response);
       setClientList(response.data)
     });
   };
